@@ -1,0 +1,90 @@
+.newsletter {
+  background-color: #5267DF;
+  padding: 60px 20px;
+  color: white;
+  text-align: center;
+}
+
+.newsletter-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.newsletter-content {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.joined-text {
+  font-size: 13px;
+  letter-spacing: 5px;
+  margin-bottom: 24px;
+}
+
+.newsletter-content h2 {
+  font-size: 32px;
+  margin-bottom: 36px;
+}
+
+.newsletter-form {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+}
+
+.input-container {
+  position: relative;
+  flex: 1;
+}
+
+.newsletter-input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 5px;
+  border: 2px solid transparent;
+  outline: none;
+}
+
+.newsletter-input.error {
+  border-color: #FA5959;
+}
+
+.error-message {
+  display: none;
+  position: absolute;
+  left: 0;
+  bottom: -20px;
+  color: #FA5959;
+  font-size: 12px;
+  font-style: italic;
+  text-align: left;
+}
+
+.error-message.visible {
+  display: block;
+}
+
+.contact-btn {
+  padding: 12px 24px;
+  background-color: #FA5959;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-btn:hover {
+  background-color: white;
+  color: #FA5959;
+}
+
+@media (max-width: 768px) {
+  .newsletter-form {
+    flex-direction: column;
+  }
+  
+  .newsletter-content h2 {
+    font-size: 24px;
+  }
+}
