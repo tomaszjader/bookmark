@@ -4,6 +4,7 @@ import Hero from './components/Hero/Hero';
 import Slider from './components/Slider/Slider';
 import Footer from './components/Footer/Footer';
 import Newsletter from './components/Newsletter/Newsletter';
+import Extension from './components/Extension/Extension';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Navbar />
       <Hero />
       <Slider />
+      <Extension />
       <Newsletter />
       <Footer />
     </div>
