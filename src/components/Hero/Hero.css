@@ -22,14 +22,14 @@
 
 .hero-content h1 {
   font-size: 48px;
-  color: #242A45;
+  color: var(--clr-dark-blue);
   margin-bottom: 24px;
   line-height: 1.1;
 }
 
 .hero-content p {
   font-size: 18px;
-  color: #9194A1;
+  color: var(--clr-gray);
   line-height: 1.5;
   margin-bottom: 32px;
 }
@@ -49,14 +49,14 @@
 }
 
 .btn-primary {
-  background-color: #5267DF;
+  background-color: var(--clr-primary);
   color: white;
 }
 
 .btn-primary:hover {
   background-color: white;
-  color: #5267DF;
-  border: 2px solid #5267DF;
+  color: var(--clr-primary);
+  border: 2px solid var(--clr-primary);
 }
 
 .btn-secondary {
@@ -81,7 +81,7 @@
   right: -700px;
   width: 1200px;
   height: 300px;
-  background: linear-gradient(90deg, #5267DF );
+  background: linear-gradient(90deg, var(--clr-primary) );
   border-radius: 180px;
   z-index: -1;
 }

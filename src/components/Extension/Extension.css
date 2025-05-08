@@ -15,12 +15,12 @@
 
 .extension-header h2 {
   font-size: 2rem;
-  color: #252b46;
+  color: var(--clr-dark-blue);
   margin-bottom: 1rem;
 }
 
 .extension-header p {
-  color: #9194a1;
+  color: var(--clr-gray);
   line-height: 1.5;
 }
 
@@ -49,12 +49,12 @@
 }
 
 .browser-card h3 {
-  color: #252b46;
+  color: var(--clr-dark-blue);
   margin-bottom: 0.5rem;
 }
 
 .browser-card p {
-  color: #9194a1;
+  color: var(--clr-gray);
   margin-bottom: 2rem;
 }
 
@@ -68,10 +68,12 @@
 }
 
 .btn-primary {
-  background-color: #5267df;
+  background-color: var(--clr-primary);
   color: white;
 }
 
 .btn-primary:hover {
-  background-color: #4255d4;
+  background-color: white;
+  color: var(--clr-primary);
+  border: 2px solid var(--clr-primary);
 }
