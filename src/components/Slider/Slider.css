@@ -1,0 +1,143 @@
+.features {
+  padding: 60px 0;
+  background-color: white;
+}
+
+.features-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.features-header {
+  max-width: 540px;
+  margin: 0 auto 48px;
+}
+
+.features-header h2 {
+  font-size: 32px;
+  color: #242A45;
+  margin-bottom: 24px;
+}
+
+.features-header p {
+  font-size: 18px;
+  color: #9194A1;
+  line-height: 1.5;
+}
+
+.features-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+  margin-bottom: 72px;
+  border-bottom: 1px solid #9194A1;
+}
+
+.tab-button {
+  font-size: 16px;
+  color: #9194A1;
+  background: none;
+  border: none;
+  padding: 20px 0;
+  cursor: pointer;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.tab-button::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #FA5959;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.tab-button.active {
+  color: #242A45;
+}
+
+.tab-button.active::after {
+  transform: scaleX(1);
+}
+
+.feature-content {
+  display: flex;
+  align-items: center;
+  gap: 125px;
+  margin-top: 72px;
+}
+
+.feature-image {
+  flex: 1;
+  position: relative;
+}
+
+.feature-image img {
+  width: 100%;
+  max-width: 536px;
+  height: auto;
+  position: relative;
+  z-index: 1;
+}
+
+.feature-text {
+  flex: 1;
+  text-align: left;
+  max-width: 445px;
+}
+
+.feature-text h3 {
+  font-size: 32px;
+  color: #242A45;
+  margin-bottom: 24px;
+}
+
+.feature-text p {
+  font-size: 18px;
+  color: #9194A1;
+  line-height: 1.5;
+  margin-bottom: 32px;
+}
+
+@media (max-width: 768px) {
+  .features-tabs {
+    flex-direction: column;
+    gap: 0;
+    margin: 0 -20px;
+    border: none;
+  }
+
+  .tab-button {
+    width: 100%;
+    border-top: 1px solid #9194A1;
+    padding: 16px 20px;
+  }
+
+  .tab-button:last-child {
+    border-bottom: 1px solid #9194A1;
+  }
+
+  .feature-content {
+    flex-direction: column;
+    gap: 48px;
+    margin-top: 48px;
+  }
+
+  .feature-text {
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .feature-image::after {
+    width: 800px;
+    height: 200px;
+    left: -300px;
+    top: 15%;
+  }
+}
