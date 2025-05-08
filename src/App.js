@@ -6,10 +6,12 @@ import Footer from './components/Footer/Footer';
 import Newsletter from './components/Newsletter/Newsletter';
 import Extension from './components/Extension/Extension';
 import FAQ from './components/FAQ/FAQ';
+import PopUp from './components/PopUp/PopUp';
 
 function App() {
   return (
     <div className="App">
+      <PopUp />
       <Navbar />
       <Hero />
       <Slider />
