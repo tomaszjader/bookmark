@@ -3,6 +3,7 @@ import './Slider.css';
 import IllustrationFeatures1 from '../../assets/images/illustration-features-tab-1.svg';
 import IllustrationFeatures2 from '../../assets/images/illustration-features-tab-2.svg';
 import IllustrationFeatures3 from '../../assets/images/illustration-features-tab-3.svg';
+import Button from '../Button/Button';
 
 const Slider = () => {
   const [activeTab, setActiveTab] = useState(0);
@@ -55,7 +56,7 @@ const Slider = () => {
           <div className="feature-text">
             <h3>{features[activeTab].title}</h3>
             <p>{features[activeTab].description}</p>
-            <button className="btn btn-primary">More Info</button>
+            <Button variant="primary">More Info</Button>
           </div>
         </div>
       </div>

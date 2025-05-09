@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './PopUp.css';
 import IllustrationFeatures from '../../assets/images/illustration-features-tab-2.svg';
+import Button from '../Button/Button';
 
 const PopUp = () => {
     const [isVisible, setIsVisible] = useState(false);
@@ -48,7 +49,7 @@ const PopUp = () => {
 
                         <h2>Intelligent search</h2>
                         <p>Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.</p>
-                        <button className="more-info-btn">More Info</button>
+                        <Button variant="primary">More Info</Button>
                     </div>
 
                 </div>
