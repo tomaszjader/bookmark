@@ -45,7 +45,7 @@ const Newsletter = () => {
   };
 
   return (
-    <section className="newsletter">
+    <section className="newsletter" id="contact">
       <div className="newsletter-container">
         <div className="newsletter-content">
           <p className="joined-text">

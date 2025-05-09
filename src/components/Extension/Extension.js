@@ -7,7 +7,7 @@ import Button from '../Button/Button';
 
 const Extension = () => {
   return (
-    <section className="extension">
+    <section className="extension" id='pricing'>
       <div className="extension-container">
         <div className="extension-header">
           <h2>Download the extension</h2>

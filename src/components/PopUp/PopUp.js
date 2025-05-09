@@ -5,31 +5,43 @@ import Button from '../Button/Button';
 
 const PopUp = () => {
     const [isVisible, setIsVisible] = useState(false);
+    const [isWideScreen, setIsWideScreen] = useState(window.innerWidth >= 1200);
 
     useEffect(() => {
-        const timer = setTimeout(() => {
-            setIsVisible(true);
-        }, 30000);
+        const handleResize = () => {
+            setIsWideScreen(window.innerWidth >= 1200);
+        };
 
-        return () => clearTimeout(timer);
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
     }, []);
 
     useEffect(() => {
+        if (isWideScreen) {
+            const timer = setTimeout(() => {
+                setIsVisible(true);
+            }, 30000);
+
+            return () => clearTimeout(timer);
+        }
+    }, [isWideScreen]);
+
+    useEffect(() => {
         const handleMouseEnter = (e) => {
-            if (e.clientY < 50) {
+            if (e.clientY < 50 && isWideScreen) {
                 setIsVisible(true);
             }
         };
 
         document.addEventListener('mousemove', handleMouseEnter);
         return () => document.removeEventListener('mousemove', handleMouseEnter);
-    }, []);
+    }, [isWideScreen]);
 
     const handleClose = () => {
         setIsVisible(false);
     };
 
-    if (!isVisible) return null;
+    if (!isVisible || !isWideScreen) return null;
 
     return (
         <div className="popup-overlay">

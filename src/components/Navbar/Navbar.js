@@ -17,6 +17,10 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
 
+  const handleLinkClick = () => {
+    setIsOpen(false);
+  };
+
   React.useEffect(() => {
     const handleResize = () => {
       setWindowWidth(window.innerWidth);
@@ -40,12 +44,14 @@ const Navbar = () => {
           <span className={`hamburger-line ${isOpen ? 'open' : ''}`}></span>
         </button>
         <div className={`navbar-links ${isOpen ? 'active' : ''}`}>
-        {showSocialIcons && (<div className="mobile-header">
-            <img src={LogoWhite} alt='logo' />
-          </div>)}
-          <a href="#features" className="nav-link">FEATURES</a>
-          <a href="#pricing" className="nav-link">PRICING</a>
-          <a href="#contact" className="nav-link">CONTACT</a>
+          {showSocialIcons && (
+            <div className="mobile-header">
+              <img src={LogoWhite} alt='logo' />
+            </div>
+          )}
+          <a href="#features" className="nav-link" onClick={handleLinkClick}>FEATURES</a>
+          <a href="#pricing" className="nav-link" onClick={handleLinkClick}>PRICING</a>
+          <a href="#contact" className="nav-link" onClick={handleLinkClick}>CONTACT</a>
           <Button variant="contact">LOGIN</Button>
           {showSocialIcons && (
             <div className="social-links">

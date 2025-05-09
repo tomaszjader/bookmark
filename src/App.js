@@ -11,7 +11,7 @@ import PopUp from './components/PopUp/PopUp';
 function App() {
   return (
     <div>
-      {/* <PopUp /> */}
+      <PopUp />
       <Navbar />
       <Hero />
       <Slider />
