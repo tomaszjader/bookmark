@@ -101,7 +101,7 @@
   content: '';
   position: absolute;
   top: 20%;
-  left: -400px;
+  left: -110%;
   width: 200%;
   height: 80%;
   background: linear-gradient(270deg, var(--clr-primary));

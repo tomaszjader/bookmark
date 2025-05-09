@@ -30,7 +30,7 @@ const Slider = () => {
   ];
 
   return (
-    <section className="features">
+    <section className="features" id="features">
       <div className="features-container">
         <div className="features-header">
           <h2>Features</h2>

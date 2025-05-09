@@ -86,14 +86,15 @@
 .feature-image::after {
   content: '';
   position: absolute;
-  top: 100px;
-  left: -800px;
-  width: 1300px;
-  height: 300px;
+  top: 40%;
+  left: -80%;
+  width: 150%;
+  height: 70%;
   background: linear-gradient(270deg, var(--clr-primary));
   border-radius: 180px;
   z-index: -1;
 }
+
 
 .feature-image img {
   
@@ -121,8 +122,15 @@
   line-height: 1.5;
   margin-bottom: 32px;
 }
-
+@media (max-width: 1200px) {
+ 
+  .feature-image img {
+    width: 100%;
+    height: auto;
+  }
+}
 @media (max-width: 768px) {
+
   .features-tabs {
     flex-direction: column;
     gap: 0;
@@ -150,11 +158,7 @@
     text-align: center;
     max-width: 100%;
   }
-
   .feature-image::after {
-    width: 800px;
-    height: 200px;
-    left: -300px;
-    top: 15%;
+    width: 150%;
   }
 }
