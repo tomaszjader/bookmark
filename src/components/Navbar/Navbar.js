@@ -1,6 +1,7 @@
 import React from 'react';
 import './Navbar.css';
 import Logo from '../../assets/images/logo-bookmark.svg';
+import Button from '../Button/Button';
 
 const Navbar = () => {
   return (
@@ -11,7 +12,7 @@ const Navbar = () => {
           <a href="#features" className="nav-link">FEATURES</a>
           <a href="#pricing" className="nav-link">PRICING</a>
           <a href="#contact" className="nav-link">CONTACT</a>
-          <a href="#login" className="nav-link login-btn">LOGIN</a>
+          <Button variant="contact">LOGIN</Button>
         </div>
       </div>
     </nav>

@@ -64,20 +64,6 @@
   display: block;
 }
 
-.contact-btn {
-  padding: 12px 24px;
-  background-color: #FA5959;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.contact-btn:hover {
-  background-color: white;
-  color: #FA5959;
-}
 
 @media (max-width: 768px) {
   .newsletter-form {

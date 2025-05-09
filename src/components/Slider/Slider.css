@@ -30,9 +30,12 @@
 .features-tabs {
   display: flex;
   justify-content: center;
-  gap: 48px;
+  gap: 24px;
   margin-bottom: 72px;
-  border-bottom: 1px solid #9194A1;
+  border-bottom: 1px solid rgba(145, 148, 161, 0.2);
+  max-width: 730px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .tab-button {
@@ -40,10 +43,11 @@
   color: #9194A1;
   background: none;
   border: none;
-  padding: 20px 0;
+  padding: 20px 24px;
   cursor: pointer;
   position: relative;
   transition: color 0.3s ease;
+  white-space: nowrap;
 }
 
 .tab-button::after {
@@ -76,14 +80,27 @@
 .feature-image {
   flex: 1;
   position: relative;
+  z-index: 0;
+}
+
+.feature-image::after {
+  content: '';
+  position: absolute;
+  top: 100px;
+  left: -600px;
+  width: 1300px;
+  height: 300px;
+  background: linear-gradient(270deg, var(--clr-primary));
+  border-radius: 180px;
+  z-index: -1;
 }
 
 .feature-image img {
-  width: 100%;
-  max-width: 536px;
-  height: auto;
+  
+  width: auto;
+  height: 346px;
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 
 .feature-text {
