@@ -87,7 +87,7 @@
   content: '';
   position: absolute;
   top: 100px;
-  left: -600px;
+  left: -800px;
   width: 1300px;
   height: 300px;
   background: linear-gradient(270deg, var(--clr-primary));

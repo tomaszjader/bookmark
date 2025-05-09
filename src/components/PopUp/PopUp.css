@@ -87,9 +87,24 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  overflow: hidden;
 }
 
 .popup-image {
   max-width: 100%;
   height: auto;
+  z-index: 2;
+}
+
+.popup-illustration::after {
+  content: '';
+  position: absolute;
+  top: 20%;
+  left: -400px;
+  width: 200%;
+  height: 80%;
+  background: linear-gradient(270deg, var(--clr-primary));
+  border-radius: 180px;
+  z-index: 1;
 }
