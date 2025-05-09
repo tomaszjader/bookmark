@@ -3,6 +3,7 @@ import './Extension.css';
 import ChromeLogo from '../../assets/images/logo-chrome.svg';
 import FirefoxLogo from '../../assets/images/logo-firefox.svg';
 import OperaLogo from '../../assets/images/logo-opera.svg';
+import Button from '../Button/Button';
 
 const Extension = () => {
   return (
@@ -17,19 +18,19 @@ const Extension = () => {
             <img src={ChromeLogo} alt="Chrome logo" />
             <h3>Add to Chrome</h3>
             <p>Minimum version 62</p>
-            <button className="btn btn-primary">Add & Install Extension</button>
+            <Button variant="primary">Add & Install Extension</Button>
           </div>
           <div className="browser-card">
             <img src={FirefoxLogo} alt="Firefox logo" />
             <h3>Add to Firefox</h3>
             <p>Minimum version 55</p>
-            <button className="btn btn-primary">Add & Install Extension</button>
+            <Button variant="primary">Add & Install Extension</Button>
           </div>
           <div className="browser-card">
             <img src={OperaLogo} alt="Opera logo" />
             <h3>Add to Opera</h3>
             <p>Minimum version 46</p>
-            <button className="btn btn-primary">Add & Install Extension</button>
+            <Button variant="primary">Add & Install Extension</Button>
           </div>
         </div>
       </div>

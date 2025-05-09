@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Newsletter.css';
+import Button from '../Button/Button';
 
 const Newsletter = () => {
   const [count, setCount] = useState(35000);
@@ -39,7 +40,7 @@ const Newsletter = () => {
               />
               <p className="error-message">Whoops, make sure it's an email</p>
             </div>
-            <button className="contact-btn">Contact Us</button>
+            <Button variant="contact">Contact Us</Button>
           </div>
         </div>
       </div>
