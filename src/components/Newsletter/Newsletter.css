@@ -34,34 +34,41 @@
 
 .input-container {
   position: relative;
-  flex: 1;
 }
 
 .newsletter-input {
-  width: 100%;
+  width: 300px;
   padding: 12px;
   border-radius: 5px;
   border: 2px solid transparent;
   outline: none;
+  background-color: white;
 }
 
 .newsletter-input.error {
   border-color: #FA5959;
+  background: white url('../../assets/images/icon-error.svg') no-repeat;
+  background-position: right 20px center;
+  margin-bottom: 0;
 }
 
 .error-message {
   display: none;
   position: absolute;
   left: 0;
-  bottom: -20px;
-  color: #FA5959;
+  bottom: -25px;
   font-size: 12px;
   font-style: italic;
   text-align: left;
+  width: 304px;
 }
 
 .error-message.visible {
   display: block;
+  background-color: #FA5959;
+  color: white;
+  padding: 4px 12px;
+  border-radius: 0 0 5px 5px;
 }
 
 
