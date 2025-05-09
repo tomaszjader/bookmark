@@ -1,6 +1,6 @@
 # Bookmark
 
-A simple product page written in React based on mokap.
+A simple product page written in React based on mokap. 
 
 
 [Live Preview](https://tomaszjader.github.io/bookmark/)
