@@ -1,0 +1,90 @@
+$primary-color: #5267DF;
+$error-color: #FA5959;
+$white: white;
+
+.newsletter {
+  background-color: $primary-color;
+  padding: 60px 20px;
+  color: $white;
+  text-align: center;
+
+  &-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  &-content {
+    max-width: 500px;
+    margin: 0 auto;
+
+    h2 {
+      font-size: 32px;
+      margin-bottom: 36px;
+    }
+  }
+
+  &-form {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+  }
+
+  &-input {
+    width: 300px;
+    padding: 12px;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    outline: none;
+    background-color: $white;
+
+    &.error {
+      border-color: $error-color;
+      background: $white url('../../assets/images/icon-error.svg') no-repeat;
+      background-position: right 20px center;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.joined-text {
+  font-size: 13px;
+  letter-spacing: 5px;
+  margin-bottom: 24px;
+}
+
+.input-container {
+  position: relative;
+}
+
+.error-message {
+  display: none;
+  position: absolute;
+  left: 0;
+  bottom: -25px;
+  font-size: 12px;
+  font-style: italic;
+  text-align: left;
+  width: 304px;
+
+  &.visible {
+    display: block;
+    background-color: $error-color;
+    color: $white;
+    padding: 4px 12px;
+    border-radius: 0 0 5px 5px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .newsletter {
+    &-form {
+      flex-direction: column;
+    }
+
+    &-content {
+      h2 {
+        font-size: 24px;
+      }
+    }
+  }
+}
