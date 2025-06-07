@@ -1,0 +1,48 @@
+.btn {
+  padding: 12px 32px;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  // Primary Button - niebieski
+  &-primary {
+    background-color: #5267DF;
+    color: white;
+
+    &:hover,
+    &:focus {
+      background-color: white;
+      color: #5267DF;
+      border-color: #5267DF;
+    }
+  }
+
+  // Secondary Button - szary
+  &-secondary {
+    background-color: #f7f7f7;
+    color: #252525;
+
+    &:hover,
+    &:focus {
+      background-color: transparent;
+      color: #252525;
+      border-color: #252525;
+    }
+  }
+
+  // Contact Button - czerwony
+  &-contact {
+    background-color: #FA5959;
+    color: white;
+
+    &:hover,
+    &:focus {
+      background-color: white;
+      color: #FA5959;
+      border-color: #FA5959;
+    }
+  }
+}

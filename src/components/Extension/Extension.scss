@@ -1,0 +1,100 @@
+// Variables
+$padding-large: 4rem;
+$padding-medium: 2rem;
+$margin-large: 3rem;
+$margin-medium: 2rem;
+$margin-small: 1rem;
+$max-width-large: 1200px;
+$max-width-medium: 600px;
+$max-width-card: 280px;
+$card-image-size: 100px;
+
+.extension {
+  padding: $padding-large $padding-medium;
+  text-align: center;
+
+  &-container {
+    max-width: $max-width-large;
+    margin: 0 auto;
+  }
+
+  &-header {
+    max-width: $max-width-medium;
+    margin: 0 auto $margin-large;
+
+    h2 {
+      font-size: 2rem;
+      color: var(--clr-dark-blue);
+      margin-bottom: $margin-small;
+    }
+
+    p {
+      color: var(--clr-gray);
+      line-height: 1.5;
+    }
+  }
+
+  &-cards {
+    display: flex;
+    justify-content: center;
+    gap: $margin-medium;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+}
+
+.browser-card {
+  background: white;
+  padding: $padding-medium;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  max-width: $max-width-card;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+
+  p {
+    color: var(--clr-gray);
+    margin-bottom: $margin-medium;
+    padding-bottom: $padding-medium;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 6rem;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: url('../../assets/images/bg-dots.svg') repeat-x center;
+  }
+
+  &:nth-child(1) {
+    margin-top: 0;
+  }
+
+  &:nth-child(2) {
+    margin-top: $margin-medium;
+  }
+
+  &:nth-child(3) {
+    margin-top: $padding-large;
+  }
+
+  img {
+    width: $card-image-size;
+    height: $card-image-size;
+    margin-bottom: $margin-medium;
+  }
+
+  h3 {
+    color: var(--clr-dark-blue);
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    color: var(--clr-gray);
+    margin-bottom: $margin-medium;
+  }
+}
