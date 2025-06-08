@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+
+// Color variables
+$clr-primary: hsl(231, 69%, 60%);
+$clr-secondary: hsl(0, 94%, 66%);
+$clr-gray: hsl(229, 8%, 60%);
+$clr-dark-blue: hsl(229, 31%, 21%);
+
+body {
+  margin: 0;
+  font-family: 'Rubik', sans-serif;
+  font-size: 18px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+}
