@@ -3,7 +3,7 @@ import './Button.css';
 
 const Button = ({ 
   children, 
-  variant = 'primary', // primary, secondary, contact
+  variant = 'primary',
   className = '',
   ...props 
 }) => {

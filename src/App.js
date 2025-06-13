@@ -7,7 +7,7 @@ import Extension from './components/Extension/Extension';
 import FAQ from './components/FAQ/FAQ';
 import PopUp from './components/PopUp/PopUp';
 
-function App() {
+const App = ()=> {
   return (
     <div>
       <PopUp />
