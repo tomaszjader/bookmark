@@ -1,7 +1,7 @@
 # Bookmark
 
 
-A simple product page written in React, Java Script and CSS based on mokap.
+A simple product page written in React, JavaScript and CSS based on mokap.
 
 
 [Live Preview](https://tomaszjader.github.io/bookmark/)
