@@ -1,4 +1,4 @@
-# Bookmark
+# Bookmark WEB
 
 
 A simple product page written in React, JavaScript and CSS based on mokap in Figma.
